@@ -48,22 +48,13 @@ private PostClient postClient;
 
 ```java
 UserRequest userRequest = new UserRequest(/* 사용자 정보 설정 */);
-userClient.
-
-postUser(userRequest).
-
-subscribe(response ->System.out.
-
-println("사용자 생성: "+response));
+userClient.postUser(userRequest)
+    .subscribe(response -> System.out.println("사용자 생성: " + response));
 
 PostRequest postRequest = new PostRequest(/* 게시물 정보 설정 */);
-postClient.
+postClient.postPost(postRequest)
+    .subscribe(response -> System.out.println("게시물 생성: " + response));
 
-postPost(postRequest).
-
-subscribe(response ->System.out.
-
-println("게시물 생성: "+response));
 ```
 
 ## 주의사항
