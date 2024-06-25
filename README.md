@@ -1,4 +1,4 @@
-# 프로젝트 개요
+# Spring Boot WebClient 예제
 
 이 프로젝트는 사용자와 게시물 관리를 위한 WebClient 기반의 클라이언트 클래스를 포함하고 있습니다. `UserClient`는 사용자 엔드포인트와 통신하고, `PostClient`는 게시물 엔드포인트와 통신합니다. 각 클래스는 CRUD 작업을 수행하는 메서드를
 제공합니다.
