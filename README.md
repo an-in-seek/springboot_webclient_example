@@ -28,8 +28,23 @@
 
 이 프로젝트는 다음 의존성을 필요로 합니다:
 
+- Spring Boot
 - Spring WebFlux
+- Spring Boot Test
 - Lombok
+- JUnit
+
+`build.gradle` 파일에 다음 종속성이 포함되어 있는지 확인하세요:
+
+```groovy
+dependencies {
+    implementation 'org.springframework.boot:spring-boot-starter-webflux'
+    compileOnly 'org.projectlombok:lombok'
+    annotationProcessor 'org.projectlombok:lombok'
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+    testImplementation 'io.projectreactor:reactor-test'
+}
+```
 
 ## 사용법
 
